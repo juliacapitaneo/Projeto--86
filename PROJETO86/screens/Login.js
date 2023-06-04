@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import firebase from "firebase";
 
-const appIcon = require("../assets/App teste.png");
+const appIcon = require("../assets/Complimoney.png");
 
 export default class LoginScreen extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ export default class LoginScreen extends Component {
               style={[styles.button, { marginTop: 20 }]}
               onPress={() => this.handleLogin(email, password)}
             >
-              <Text style={styles.buttonText}>Entrar</Text>
+              <Text style={styles.buttonText}>Entrar nas minhas contas</Text>
             </TouchableOpacity>
           </View>
         </ImageBackground>
@@ -78,12 +78,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#FFFFFF"
   },
-  bgImage: {
-    flex: 1,
-    resizeMode: "cover",
-    justifyContent: "center"
-  },
-
   upperContainer: {
     flex: 0.5,
     justifyContent: "center",
@@ -121,12 +115,12 @@ const styles = StyleSheet.create({
     height: 55,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F48D20",
+    backgroundColor: "green",
     borderRadius: 15
   },
   buttonText: {
     fontSize: 24,
-    color: "#FFFFFF",
+    color: "green",
     fontFamily: "Rajdhani_600SemiBold"
   }
 });
